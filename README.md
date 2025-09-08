@@ -4,4 +4,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://github.com/Squzmen/firstP.git/)
+- [Публичная страница на GitHub Pages](https://squzmen.github.io/firstP/src/index.html)
