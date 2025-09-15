@@ -5,8 +5,7 @@ const form = document.getElementById('contactForm');
 let lastActive = null;
 openBtn.addEventListener('click', () => {
     lastActive = document.activeElement;
-    dlg.showModal(); // модальный режим +
-    затемнение
+    dlg.showModal(); // модальный режим + затемнение
     dlg.querySelector('input,select,textarea,button')?.focus();
 });
 closeBtn.addEventListener('click', () => dlg.close('cancel'));
