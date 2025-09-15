@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,37 @@
     <meta name="description" content="Краткое описание главной страницы вашего сайта">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
 
 </head>
+
 <body>
-    <header>
-        <a href="/">Логотип или название сайта</a>
-        <!-- Главное меню навигации -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+    <header class="header">
+        <a class="header__brand" href="/">Логотип</a>
+        <nav class="nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--cta" href="about.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Связаться</a></li>
+                <li class="nav__item">
+                    <button class="nav__theme-toggle theme-toggle" aria-pressed="false">
+                        <span class="theme-toggle__icons">
+                            <img src="../assets/sun.png" alt="" class="theme-toggle__icon theme-toggle__icon--sun"
+                                width="32" height="32">
+                            <img src="../assets/moon.png" alt="" class="theme-toggle__icon theme-toggle__icon--moon"
+                                width="32" height="32">
+                        </span>
+                        <span class="visually-hidden">Сменить тему</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Простые "хлебные крошки" -->
-        <nav aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a> →
-            <span>О нас</span>
-        </nav>
-
-        <h1>О нашей компании</h1>
-        <section>
-            <h2>Наша история</h2>
-            <p>Текст о том, как все начиналось...</p>
-        </section>
-        <section>
-            <h2>Наша команда</h2>
-            <p>Текст о команде...</p>
-        </section>
+        <div class="media-container">
+            <iframe src="https://rutube.ru/play/embed/9f41ebe82947852132f8f3ffb961fdea"
+                allow="clipboard-write; autoplay" allowFullScreen title="Видео о нашей компании"></iframe>
+        </div>
     </main>
 
     <footer>
@@ -44,4 +46,5 @@
         <p>Телефон: 8 800 555 35 35</p>
     </footer>
 </body>
+
 </html>

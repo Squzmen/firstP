@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,50 @@
     <meta name="description" content="Краткое описание главной страницы вашего сайта">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
 </head>
+
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <a href="/">Логотип или название сайта</a>
-        <!-- Главное меню навигации -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+    <header class="header">
+        <a class="header__brand" href="/">Логотип</a>
+        <nav class="nav" aria-label="Основная навигация">
+            <ul class="nav__list">
+
+                <li class="nav__item"><a class="nav__link nav__link--cta" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Связаться</a></li>
+                <li class="nav__item">
+                    <button class="nav__theme-toggle theme-toggle" aria-pressed="false">
+                        <span class="theme-toggle__icons">
+                            <img src="../assets/sun.png" alt="" class="theme-toggle__icon theme-toggle__icon--sun"
+                                width="32" height="32">
+                            <img src="../assets/moon.png" alt="" class="theme-toggle__icon theme-toggle__icon--moon"
+                                width="32" height="32">
+                        </span>
+                        <span class="visually-hidden">Сменить тему</span>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <!-- Уникальное основное содержимое страницы -->
     <main>
-        <h1>Добро пожаловать на наш сайт!</h1>
-
-        <!-- Секция 1 с якорем -->
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <p>Описание предоставляемых услуг...</p>
-            <a href="#contacts">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
+        <section class="hero">
+            <h1>Добро пожаловать на наш сайт!</h1>
+            <p>Мы создаём инновационные решения для вашего бизнеса</p>
         </section>
 
-        <!-- Секция 2 с якорем -->
         <section id="portfolio">
             <h2>Портфолио</h2>
-            <p>Примеры наших работ...</p>
-        </section>
-
-        <!-- Секция 3 с якорем -->
-        <section id="contacts">
-            <h2>Контактная информация</h2>
-            <p>Наши контакты...</p>
-            <a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
+            <img src="../assets/stethem.jpg" sizes="(max-width: 768px) 92vw, 640px" alt="Пример нашего проекта"
+                width="640" height="360" loading="lazy">
         </section>
     </main>
-
     <!-- Подвал сайта -->
     <footer>
         <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
         <p>Телефон: 8 800 555 35 35</p>
     </footer>
 </body>
+
 </html>
